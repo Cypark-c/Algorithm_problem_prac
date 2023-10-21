@@ -1,13 +1,5 @@
 def solution(n):
     
-    if n%2==0:
-        n=n
-    else:
-        n=n-1
-    answer = 0
+
+    return sum([i for i in range(2, n + 1, 2)])
     
-    while n!=0:
-        answer+=n
-        n=n-2
-    
-    return answer
