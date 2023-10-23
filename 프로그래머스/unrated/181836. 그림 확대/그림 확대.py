@@ -12,3 +12,17 @@ def solution(picture, k):
             answer.append(str)
             
     return answer
+
+# 아래와 같은 풀이도 있음
+
+'''
+def solution(picture, k):
+    answer = []
+    for i in range(len(picture)):
+        for _ in range(k):
+            answer.append(picture[i].replace('.', '.' * k).replace('x', 'x' * k))
+    return answer
+'''
+
+'''
+확실히 replace를 사용했다면, 조금 더 쉽게 풀 수 있었을텐데.. 많이 활용을 해보지 않아서 바로 생각이 나지 않았다.
