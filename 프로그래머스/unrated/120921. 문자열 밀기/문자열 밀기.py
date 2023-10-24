@@ -8,7 +8,7 @@ def solution(A, B):
         A=x+y
         cnt+=1
         
-        if cnt==99:
+        if cnt==len(A):
             return -1
         
     return cnt
