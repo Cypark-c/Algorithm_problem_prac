@@ -1,4 +1,4 @@
-def solution(n): # 재귀함수는 일종의 스택이라고 봐야 함
+def solution(n): # 단순 반복문 사용
     x=1 
     answer=1
     while(1):
