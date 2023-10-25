@@ -1,10 +1,10 @@
 # [level unrated] 부분 문자열인지 확인하기 - 181843 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181843) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181843?language=python3) 
 
 ### 성능 요약
 
-메모리: 10.3 MB, 시간: 0.00 ms
+메모리: 10.2 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 3일 22:14:12
+2023년 10월 3일 23:40:0
 
 ### 문제 설명
 
