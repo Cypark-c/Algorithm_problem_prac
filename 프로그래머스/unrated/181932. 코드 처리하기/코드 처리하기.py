@@ -5,9 +5,9 @@ def solution(code):
     for idx,val in enumerate(code):
         if ((val)!='1'):       
             if (mode==0)&(idx%2==0):
-                ret+=code[idx]
+                ret+=val
             elif (mode==1)&(idx%2==1):
-                ret+=code[idx]    
+                ret+=val  
         
         else:
             mode=(mode+1)%2
