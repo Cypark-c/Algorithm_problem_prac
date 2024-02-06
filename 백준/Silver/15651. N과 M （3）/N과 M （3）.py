@@ -17,7 +17,7 @@
 def DFS(count,Narr):
     if count==M:
         # Narr.sort()
-        result.append(Narr)
+        print(*Narr)
         return
 
     for i in range(1,N+1):
@@ -32,6 +32,4 @@ result=[]
 
 DFS(0,[])
 
-for item in result:
-    print(*item)
 
