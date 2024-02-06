@@ -19,10 +19,13 @@ def DFS(count,Narr):
         # Narr.sort()
         print(*Narr)
         return
-
+    
+    # append와 pop을 쓰면 조금 빨라지나?
     for i in range(1,N+1):
-        DFS(count+1,Narr+[i])
-
+        Narr.append(i)
+        DFS(count+1,Narr)
+        Narr.pop() 
+        
 import sys
 input=sys.stdin.readline
 # N은 숫자 M은 길이
