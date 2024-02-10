@@ -6,22 +6,17 @@
 
 [아이디어]
 - DFS로 선택하게 함.
+- 반복문 내에서 기준을 잡는 방법도 있음 (그런데 사실 백트래킹 단위 함수를 잘 짰으면 이런걸 신경 쓸 필요가 있을까)
 '''
 
-def DFS_B(count,Narr):
+def DFS_B(start,count,Narr):
     if count==M:
-        if Narr not in result:
-            result.append(Narr)
+        result.append(Narr)
         return
-
-    # 이 로직이 append pop 방식으로는 안되는듯 함.
-    # 이 단계에서 현재 가진 max원소 보다 큰 값만 넣어야 한다.
-    for i in Nums:
-        if Narr==[]:
-            DFS_B(count + 1, Narr + [i])
-        
-        elif Narr!=[] and i>=max(Narr):
-            DFS_B(count+1,Narr+[i])
+    
+    # start 쓰는 방식이 훨씬 나음
+    for i in range(start,N+1):
+        DFS_B(i,count+1,Narr+[i])
 
 
 import sys
@@ -31,7 +26,7 @@ N,M=map(int,input().split())
 # 1~N까지의 수열을 담음
 Nums=[i for i in range(1,N+1)]
 result=[]
-DFS_B(0, [])
+DFS_B(1,0,[])
 
 for item in result:
     print(*item)
